@@ -9,7 +9,7 @@ This repository contains my CNN model building project on the Blood Cells Image 
 The aim is to build a robust model that can predict which type of normal peripheral blood cell is found in a microscopic image.
 
 ## Summary
-The project focused on developing an artificial neural network for image classification of different types of white blood cells. The dataset comprised microscopic images of eight distinct white blood cell categories, and multiple models were built to achieve accurate classification. Over the course of 6 model generations, validation accuracy has increased from approximately 21% to 98%. The best model (model 6), which took advantage of fine-tuning and the ResNet50 architecture, also achieved an exceptional test accuracy of 98%, demonstrating its generalization power. It is important to note that the model struggled with misclassifying certain images containing more than one cell type, suggesting room for improvement through semi-supervised learning methods.
+The project focused on developing an artificial neural network for image classification of different types of white blood cells. The dataset comprised microscopic images of eight distinct white blood cell categories, and multiple models were built to achieve accurate classification. Over the course of 6 model generations, validation accuracy has increased from approximately 63% to 98%. The best model (model 6), which took advantage of fine-tuning and the ResNet50 architecture, also achieved an exceptional test accuracy of 98%, demonstrating its generalization power. It is important to note that the model struggled with misclassifying certain images containing more than one cell type, suggesting room for improvement through semi-supervised learning methods.
 
 
 ## Introduction
@@ -29,7 +29,7 @@ The dataset's class distribution is imbalanced, with Neutrophils representing th
 
 **Model 1 (Baseline DNN)**
 
-Model 1 was designed with a simple architecture consisting of 8 layers arranged in a sequence (deep neural network; DNN). The architecture begins with a rescaling layer to standardize pixel values; then a flattening layer follows to convert image data into a one-dimensional format. Five hidden dense layers, each with 128 ReLU-activated neurons, are followed by the final output layer, which has eight neurons utilizing a softmax activation function to classify the eight types of white blood cells. The model achieved a validation accuracy of approximately 21%, which is only slightly better than that of a random model, which would be 19% according to the most frequent class (see **Fig. 1**). Since the basic DNN is unable to capture structured data, a simple convolutional neural network (CNN) was tested.
+Model 1 was designed with a simple architecture consisting of 8 layers arranged in a sequence (deep neural network; DNN). The architecture begins with a rescaling layer to standardize pixel values; then a flattening layer follows to convert image data into a one-dimensional format. Five hidden dense layers, each with 128 ReLU-activated neurons, are followed by the final output layer, which has eight neurons utilizing a softmax activation function to classify the eight types of white blood cells. The model achieved a validation accuracy of approximately 63%, which is substantially better than that of a random model, which would be 19% according to the most frequent class (see **Fig. 1**). Since the basic DNN is unable to capture structured data, a simple convolutional neural network (CNN) was tested.
 <br></br>
 
 **Model 2 (Simple CNN)**
