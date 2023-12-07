@@ -11,10 +11,6 @@ The aim is to build a robust model that can predict which type of normal periphe
 ## Summary
 The project focused on developing an artificial neural network for image classification of different types of white blood cells. The dataset comprised microscopic images of eight distinct white blood cell categories, and multiple models were built to achieve accurate classification. Over the course of 6 model generations, validation accuracy has increased from approximately 63% to 98%. The best model (model 6), which took advantage of fine-tuning and the ResNet50 architecture, also achieved an exceptional test accuracy of 98%, demonstrating its generalization power. It is important to note that the model struggled with misclassifying certain images containing more than one cell type, suggesting room for improvement through semi-supervised learning methods.
 
-
-## Introduction
-
-
 ## Results & Discussion
 
 **Description of the dataset and preprocessing**
